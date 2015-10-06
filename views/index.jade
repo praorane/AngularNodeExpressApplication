@@ -1,0 +1,17 @@
+block content
+body(ng-app='angularNode')
+  div(ng-controller='mainController')
+    h2 {{PageTitle}}
+    ul.menu
+      li
+        a(href='/addPost') Add Post
+      
+    div(ng-view)
+
+
+  script(src='/js/lib/angular/angular.js')
+  script(src='/js/app.js')
+  script(src='/js/services.js')
+  script(src='/js/controllers.js')
+  script(src='/js/filters.js')
+  script(src='/js/directives.js')
